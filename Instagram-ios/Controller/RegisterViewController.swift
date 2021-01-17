@@ -143,10 +143,14 @@ class RegisterViewController: UIViewController {
         }
         
         // Register
-        AuthManager.shared.register(username: username, email: email, password: password, completion: { success in
+        AuthManager.shared.register(username: username, email: email, password: password, completion: { [weak self] success in
             if success{
+                guard let strongSelf = self else { return }
+                
+                strongSelf.dismiss(animated: true)
             }
         })
+        
 
     }
 }

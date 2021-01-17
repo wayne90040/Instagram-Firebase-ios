@@ -13,7 +13,9 @@ class AuthManager {
     
     // MARK: - Public
     
-    public func register(username: String, email: String, password: String, completion: @escaping(Bool) -> Void){
+    
+    /// Firebase Register
+    public func register(username: String, email: String, password: String, completion: @escaping(Bool) -> Void) {
         
         // Check username and email is available
         DatabaseManager.shared.checkUsernameEmail(username: username, email: email, completion: { available in
@@ -42,7 +44,8 @@ class AuthManager {
         })
     }
     
-    public func login(username: String?, email: String?, password: String, completion: @escaping(Bool) -> Void){
+    /// Firebase Login
+    public func login(username: String?, email: String?, password: String, completion: @escaping(Bool) -> Void) {
         if let email = email{
             // email log in
             Auth.auth().signIn(withEmail: email, password: password, completion: { result, error in
@@ -57,6 +60,18 @@ class AuthManager {
             
             // username log in
             print("username log in:\(username)")
+        }
+    }
+    
+    /// Firebase Logout
+    public func logout(completion: @escaping(Bool) -> Void) {
+        do {
+            try FirebaseAuth.Auth.auth().signOut()
+            completion(true)
+            return
+        }catch {
+            completion(false)
+            return
         }
     }
 }

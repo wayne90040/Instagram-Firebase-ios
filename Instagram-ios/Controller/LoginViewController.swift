@@ -150,6 +150,8 @@ class LoginViewController: UIViewController {
         view.addSubview(headerView)
     }
     
+    // MARK:- Button Action
+    
     @objc private func didTapLoginButton(){
         usernameTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
@@ -185,7 +187,6 @@ class LoginViewController: UIViewController {
                     
                     let alert = UIAlertController(title: "Log In Error", message: "We were unable to log you in", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-                    
                     strongSelf.present(alert, animated: true, completion: nil)
                 }
             }

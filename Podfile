@@ -12,5 +12,8 @@ target 'Instagram-ios' do
   pod 'Firebase/Storage'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
+  
+  pod 'SDWebImage'
+  pod 'JGProgressHUD'
 
 end

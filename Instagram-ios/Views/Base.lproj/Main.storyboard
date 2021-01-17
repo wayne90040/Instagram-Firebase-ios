@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ygN-dT-slF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ygN-dT-slF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="901" y="-110"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore View Controller-->
         <scene sceneID="mR8-HU-m5P">
             <objects>
-                <viewController id="tKe-Ba-wvB" customClass="ViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tKe-Ba-wvB" customClass="ExploreViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Byu-c4-zXK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
         <scene sceneID="hOC-Zu-E1E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="irD-w1-SiK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="Wix-hl-JWZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="Wix-hl-JWZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BIG-Fz-XQe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="900" y="589"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="I8M-ew-gdh">
             <objects>
-                <viewController id="dtS-aq-NSP" customClass="ViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dtS-aq-NSP" customClass="CameraViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s5l-Ag-mrf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1729" y="1294"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="aQS-5L-x2q">
             <objects>
-                <viewController id="AYs-SB-KjE" sceneMemberID="viewController">
+                <viewController id="AYs-SB-KjE" customClass="ProfileViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VZ9-Te-vuU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="900" y="1280"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification View Controller-->
         <scene sceneID="g58-u5-zyk">
             <objects>
-                <viewController id="Qm8-l4-vkv" customClass="ViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qm8-l4-vkv" customClass="NotificationViewController" customModule="Instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AYi-e2-CEP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,11 +167,11 @@
             </objects>
             <point key="canvasLocation" x="1729" y="1951"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="aN5-b3-gQD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g8A-ba-XV8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="72x-IJ-hSZ"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="72x-IJ-hSZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RFH-o1-le9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -186,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="900" y="1951"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ruH-C2-zgj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBp-38-030" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="bell" catalog="system" id="nCv-YB-eKA"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="nCv-YB-eKA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iHg-Xe-eT2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -207,9 +207,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
